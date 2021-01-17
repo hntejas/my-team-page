@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Serif:wght@700;400&family=Poppins:wght@600;400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    
+    letter-spacing: 1px;
+}
+
+.wrapper{
+    max-width: 70%;
+    margin: 3rem auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.title, .about{
+    width: 50%;
+    font-family: 'PT Serif', serif;    
+    margin: 1rem;
+}
+
+
+.about-header{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.about-content{
+    font-family: 'Poppins', sans-serif;    
+    padding-right: 5rem;
+}
+
+img{
+    width: 14rem;
+    height: 20rem;
+}
+
+.main-content-wrapper{
+    margin: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile-wrapper{
+    display: flex;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.profile-wrapper:nth-child(3n + 2){
+    margin-top: 5rem;
+}
+
+.profile-name{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.profile-designation{
+    writing-mode:vertical-rl;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    padding: 5px;
+    text-transform:uppercase;
+    font-size: 1rem;
+    width: max-content;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1024px){
+    .wrapper{
+        max-width: 80%;
+    }
+    img{
+        width: 12rem;
+        height: 16rem;
+    }
+    .about{
+        margin-top: 2rem;
+    }
+    .about-content{
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .wrapper{
+        max-width: 90%;
+    }
+    img{
+        width: 10rem;
+        height: 14rem;
+    }
+    .main-content-wrapper{
+        margin-bottom: 2rem;
+    }
+    .profile-designation{
+        font-size: 14px;
+    }
+    .profile-name{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .wrapper{
+        padding: 0;
+        margin: 0 0;
+        max-width: 100%;
+    }
+    .header{
+        flex-direction: column;
+        margin: 10px;
+    }
+    .title, .about{
+        width: 100%;
+        margin: 0;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .about-content{
+        font-size: 16px;
+    }
+    img{
+        width: 8rem;
+        height: 11rem;
+    }
+
+    .main-content-wrapper{
+        margin: 1rem 0;
+        justify-content: space-around;
+    }
+
+    .profile-wrapper{
+        margin: 5px;
+    }
+
+    .profile-name{
+        font-size: 14px;
+    }
+
+    .profile-designation{
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+
+    .profile-wrapper:nth-child(3n + 2){
+        margin-top: 5px;
+    }
+
+    .profile-wrapper:nth-child(even){
+        margin-top: 2.5rem;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+}
