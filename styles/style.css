@@ -77,6 +77,16 @@ footer{
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 1250px){
+    .wrapper{
+        max-width: 85%;
+    }
+    img{
+        width: 12rem;
+        height: 16rem;
+    }
+}
+
 @media (max-width: 1024px){
     .wrapper{
         max-width: 80%;
@@ -103,6 +113,7 @@ footer{
     }
     .main-content-wrapper{
         margin-bottom: 2rem;
+        justify-content: space-around;
     }
     .profile-designation{
         font-size: 14px;
